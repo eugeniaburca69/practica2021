@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books, Tea and Coffee | Books Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<section>
+
+		<div class="circle1-tea"></div>
+		<div class="circle2-tea"></div>
+
+		<header>
+			<a href="#"> <img src="img/logo.png" class="logo"></a>
+			<ul>
+				<li> <a href="index.html" > Home </a></li>
+				<li class="cart"> <a href="cart.html" target="_blank"> Cart <span>0</span> </a></li>
+				<li> <a href="coffee.html" > Coffee Shop </a> </li>
+				<li> <a href="tea.html" > Tea Shop </a> </li>
+			</ul>
+		</header>
+
+		<div class="container-tea">
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange('img/book-shop1.png')"> <img src="img/book-shop1.png"> </li>
+				<li onclick ="imgChange('img/book-pack1.png')"> <img src="img/book-pack1.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2 class="shop-title">Dezvoltare Personală</h2>
+				<img src="img/book-shop1.png" class="Tea shop-img">
+				<div class="qtity">
+					<span>Price <span class="shop-price"> 24,00$ </span></span>
+				</div>
+				<a href="#" class="btn add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+		<div class="container-tea tea2">
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange2('img/book-shop2.png')"> <img src="img/book-shop2.png"> </li>
+				<li onclick ="imgChange2('img/book-pack2.png')"> <img src="img/book-pack2.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2 class="shop-title">Psihologie</h2>
+				<img src="img/book-shop2.png" class="Tea2 shop-img">
+				<div class="qtity">
+					<span>Price <span class="shop-price"> 15,00$ </span></span>
+				</div>
+				<a href="#" class="btn add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+		<div class="container-tea">
+
+			<ul class="thumb-tea">
+				<li onclick ="imgChange3('img/book-shop3.png')"> <img src="img/book-shop3.png" width=""> </li>
+				<li onclick ="imgChange3('img/design.png')"> <img src="img/design.png"> </li>
+			</ul>
+
+			<div class="imgBox">
+				<h2 class="shop-title">Istorie</h2>
+				<img src="img/book-shop3.png" class="Tea3 shop-img">
+				<div class="qtity">
+					<span>Price <span class="shop-price"> 19,00$ </span></span>
+				</div>
+				<a href="#" class="btn add-cart">Add to cart</a>
+			</div>
+
+		</div>
+
+
+	</section>
+
+	<script>
+		function imgChange(anything){
+			document.querySelector('.Tea').src = anything;
+		}
+
+		function imgChange2(anything){
+			document.querySelector('.Tea2').src = anything;
+		}
+
+		function imgChange3(anything){
+			document.querySelector('.Tea3').src = anything;
+		}
+
+	</script>
+
+	<script src="cart3.js"></script>
+
+</body>
+</html>
